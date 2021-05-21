@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!-- Metatags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web de prueba para solución de solicitud R3">
+    <meta name="author" content="José Mirabal">
+
+    <!-- Metatags Open Graph -->
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Solución - Solicitud R3">
+    <meta property="og:description" content="Web de prueba para solución de solicitud R3">
+    <meta property="og:image" content="img/video-thumbnail.jpg">
+
+    <!-- Título de la página -->
     <title>Solución - Solicitud R3</title>
+
+    <!-- Links a favicon y CSS -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    
+    <!-- Contenedor -->
+    <div class="container">
+      <div class="wrapper">
+        <!-- Contenedor de la imagen y botón que llaman el modal -->
+        <div class="img-container">
+          <button class="btn-modal" id="btn-modal" aria-label="Abrir modal" tabindex="1">
+            <!-- Imagen de muestra del video -->
+            <img src="img/video-thumbnail.jpg" alt="video thumbnail" class="img-thumbnail">
+            <span class="icon-button">
+              <!-- Ícono SVG con forma de botón de play -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon-button" viewBox="0 0 16 16">
+                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div class="text-container">
+          <h1 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quis ratione deserunt qui</h1>
+          <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus sed sapiente mollitia impedit voluptatem adipisci similique minima suscipit, odio voluptates vel amet, vitae quaerat alias expedita commodi fugit, quis dolorem!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" aria-hidden="true">
+      <div class="modal-wrapper">
+        <!-- Cabecera del modal -->
+        <div class="modal-header">
+          <!-- Título del modal -->
+          <h2 class="modal-title">The best laptop</h2>
+          <!-- Botón que cierra el modal -->
+          <button class="btn-modal-close" aria-label="Cerrar modal" tabindex="2">
+            <!-- Ícono SVG para el botón -->
+            <svg class="modal-close-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+          </button>
+        </div>
+        <!-- Cuerpo del modal -->
+        <div class="modal-body">
+          <div class="content-video">
+            <video src="video/video.mp4" controls>
+              Tu navegador no soporta la etiqueta de video. Lamentamos el inconveniente.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link al archivo de JavaScript -->
+    <script src="js/scripts.js"></script>
   </body>
 </html>
