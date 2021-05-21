@@ -16,5 +16,4 @@ fetch("http://api.mediastack.com/v1/news?access_key=d2de2a96cf411f9aabba1773035e
       `;
       dataTable.appendChild(tr);
     });
-    // dataTable.appendChild(trow);
   });
