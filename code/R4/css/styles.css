@@ -20,8 +20,8 @@ body {
 }
 
 .wrapper {
-  width: 950px;
-  overflowX: auto;
+  width: 970px;
+  overflow: auto;
 }
 
 .table {
